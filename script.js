@@ -6,4 +6,4 @@ function toggleMenu(){
     }else{
         menuMobile.className = "menu-mobile-active";
     }
-}
+}   
