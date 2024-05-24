@@ -4,23 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <title>Happy Day</title>
 </head>
 <body>
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="main border">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <!-- LOGO SIDEBAR -->
+            <header class="sidebar-header">
+                <img class="sidebar-logo" src="assets/img/Logo.png" alt=""/>
+            </header>
+            <!-- MENU SIDEBAR -->
+            <nav>
+                <!-- BOTAO CATÁLOGO E CESTAS -->
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined">home</i>
+                        <span>Catálogo e Cestas</span>
+                    </span>
+                </button>
+                <!-- BOTAO CLIENTES -->
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined">email</i>
+                        <span>Clientes</span>
+                    </span>
+                </button>
+                <!-- ENTREGA -->
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined">home</i>
+                        <span>Entrega</span>
+                    </span>
+                </button>
+            </nav>
+        </aside>
+        <!-- MENU MOBILE -->
+        <button class="button-mobile" onclick="toggleMenu()">
+            <i class="material-symbols-outlined">menu</i>
+            <span>Menu</span>
+        </button>
 
-    <div class="container">
-        <!-- CONTAINER ESQUERDO -->
-        <div class="containerEsq">
-            <div class="menu">
-                <h1>teste</h1>
+        <nav class="menu-mobile" id="menu-mobile">
+            <!-- BOTAO FECHAR -->
+            <button class="button-close" onclick="toggleMenu()">
+                <span>
+                    <i class="material-symbols-outlined">close</i>
+                </span>
+            </button>
+            <!-- BOTAO CATÁLOGO E CESTAS -->
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">home</i>
+                    <span class="mobile-text">Catálogo e Cestas</span>
+                </span>
+            </button>
+            <!-- BOTAO CLIENTES -->
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">email</i>
+                    <span class="mobile-text">Clientes</span>
+                </span>
+            </button>
+            <!-- ENTREGA -->
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">home</i>
+                    <span class="mobile-text">Entrega</span>
+                </span>
+            </button>
+        </nav>
+        <!-- CONTEUDO PRINCIPAL -->
+        <div class="container border">
+            <!-- LOGO CONTAINER -->
+            <div class="div-logo">
+                <img class="logoEsc" src="assets/img/LogoEscrita.png" alt="">
             </div>
-        </div>
-        <!-- CONTAINER PRINCIPAL -->
-        <div class="containerDir">
-            <div class="produtos">
-                <h1>teste1</h1>
+            <!-- CONTAINER PRODUTOS -->
+            <div class="container-prod border1">
+                <div class="prod border1">
+                    <h1>Todos os Produtos:</h1>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
