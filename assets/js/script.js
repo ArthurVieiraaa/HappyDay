@@ -8,9 +8,9 @@ function toggleMenu(){
     }
 }
 
-const products = document.querySelectorAll(".card");
+const products = document.querySelectorAll(".card, .card-clientes");
 
-function teste() {
+function quantidade() {
     let total = products.length || 0;
 
     const totalElement = document.querySelector(".mostrador");
@@ -22,4 +22,4 @@ function teste() {
     return total;
 }
 
-teste();
+quantidade();

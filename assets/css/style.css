@@ -385,7 +385,7 @@ footer{
 .card{
     width: 18%;
     height: 20%;
-    margin: 15px;
+    margin: 15px 0 30px;
     box-sizing: border-box;
     float: left;
     text-align: center;
@@ -409,6 +409,13 @@ footer{
     margin: 0 auto;
     display: block;
     border-radius: 20px;
+}
+
+.imgcard{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card h3{
@@ -485,6 +492,11 @@ button{
     border-bottom-left-radius: 20px;
 }
 
+button:hover{
+    background-color: #a5b6aa;
+    transition: 0.4s;
+}
+
 .comprar{
     background-color: #B5C5BA;
 }
@@ -497,6 +509,10 @@ button{
     .card{
         width: 45%;
     }	
+
+    .card-clientes{
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 1165px){
@@ -509,7 +525,11 @@ button{
 
     .card{
         width: 45%;
-    }	
+    }
+
+    .card-clientes{
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -519,6 +539,10 @@ button{
     }
 
     .card{
+        width: 100%;
+    }
+
+    .card-clientes{
         width: 100%;
     }
 
@@ -562,7 +586,7 @@ button{
 }
 
 .card-clientes{
-    width: 25%;
+    width: 20%;
     height: 40%;
     margin: 30px 0;
     box-sizing: border-box;
@@ -582,23 +606,34 @@ button{
 }
 
 .card-clientes img{
-    width: 80%;
-    height: 25%;
+    width: 90%;
+    height: 30%;
     text-align: center;
-    margin: 0 auto;
+    margin: 5px auto;
     display: block;
     border-radius: 20px;
 }
 
 .card-clientes h3{
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin: 0 10px;
+    padding-top: 5px;
+}
+
+.card-clientes p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    margin: 0;
-    padding-top: 10px;
+    margin: 0 auto 20px;
+    padding-top: 5px;
 }
+
 
 .card-clientes ul{
     list-style: none;
@@ -612,6 +647,20 @@ button{
 
 .card-clientes li{
     padding: 5px;
+}
+
+.card-clientes .icons{
+    padding-top: 5px;
+}
+
+.card-clientes .icons a{
+    color: #828f86;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.card-clientes .icons a i{
+    padding-right: 0.1rem;
 }
 
 .container-ent{
