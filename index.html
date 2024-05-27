@@ -9,6 +9,10 @@
     <title>Happy Day</title>
 </head>
 <body>
+    <!-- TELA CARREGAMENTO -->
+    <div class="preloading" id="preloading">
+        <div class="loading" id="loading"></div>
+    </div>
     <!-- CONTAINER PRINCIPAL -->
     <div class="main">
         <!-- SIDEBAR -->
@@ -44,7 +48,7 @@
                 <button>
                     <span>
                         <i class="material-symbols-outlined">info</i>
-                        <span><a href="">Sobre</a></span>
+                        <span><a href="sobre.html">Sobre</a></span>
                     </span>
                 </button>
             </nav>
@@ -101,7 +105,7 @@
             <div class="container-prod">
                 <!-- DIV TODOS OS PRODUTOS -->
                 <div class="prod">
-                    <h1>Todos os Produtos:</h1>
+                    <h1>Todos os Produtos: (<span class="mostrador"></span>)</h1>
                 </div>
                 <!-- CONTAINER PRODUTOS -->
                 <div class="container-produtos">
@@ -249,5 +253,6 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script_loader.js"></script>
 </body>
 </html>
